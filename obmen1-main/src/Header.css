@@ -1,0 +1,21 @@
+#x{
+    font-weight: 300;
+    border-radius: 25px;
+    transition: 500ms;
+    color: whitesmoke;
+}
+
+#x:hover{
+    background-color: #243128;
+    opacity: .8;
+    scale: 1.05;
+    color: #009232;
+}
+#navSide{
+    color: whitesmoke;
+    transition: 500ms;
+}
+#navSide:hover{
+    scale: 1.05;
+    color:#009232;
+}

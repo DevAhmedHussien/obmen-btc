@@ -1,0 +1,74 @@
+.countainerHome{
+    background-color:#001d00;
+    color:white;
+    /* height: 70vh; */
+}
+.countaineTextField{
+    display:flex;
+    justify-content:center ;
+    gap:40px;
+    margin-top:30px
+}
+#outlined-number{
+    color:whitesmoke;
+    transition: 500ms;
+    box-shadow: 1px 2px 8px 3px #11a541;
+}
+#outlined-number:focus{
+    box-shadow: 1px 2px 8px 3px #11a541;
+    color:#c19f55;
+    font-size: 20px;
+}
+#outlined-number:hover{
+    box-shadow: 1px 2px 8px 3px #11a541;
+}
+#dd{
+    transition: 500ms;
+}   
+#dd:hover{
+    scale: 1.07;
+    background-color: #c19f55;
+}
+.textfield_label{
+    font-weight: bold !important;
+    color: #a0ffc7 !important;
+    font-size: 23px  !important;
+    top: -16px !important;
+}
+.textfield_label:focus{
+    
+    border:none !important;
+}
+.textField_border{
+    border:1px solid white;
+    border-top:none;
+    box-shadow: 2px 2px 8px 3px #11a541;
+    color :wheat;
+}
+/* CustomScrollbar.css */
+
+/* Target the main scrollbar element */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+  
+  /* Track (the area behind the thumb) style */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track */
+    border-radius: 8px; /* Rounded corners of the track */
+  }
+  
+  /* Thumb (the draggable scroll handle) style */
+  ::-webkit-scrollbar-thumb {
+    background-color:#21412b; 
+    /* //   #888; Color of the thumb */
+    border-radius: 8px; /* Rounded corners of the thumb */
+  }
+  
+  /* On hover, style the thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the thumb on hover */
+  }
+  .modelZayafka{
+    overflow:auto    ;
+  }
