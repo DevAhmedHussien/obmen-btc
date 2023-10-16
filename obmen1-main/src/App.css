@@ -98,3 +98,13 @@
     src: url(".//../public/Font/EB_Garamond/static/EBGaramond-ExtraBold.ttf");
     font-weight: 700;
 }
+.icon{
+    font-size:35px !important;    
+    color: #00fe5f  !important;
+    opacity: 0.6  !important;
+    transition: 0.3s  !important;
+}
+.icon:hover{
+    color:#f3ca73  !important;
+    opacity: 1  !important;
+}

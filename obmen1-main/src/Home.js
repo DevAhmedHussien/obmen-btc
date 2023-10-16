@@ -341,7 +341,7 @@ export default function Home(){
             <CircularProgress
                 size={68}
                 sx={{
-                color: errorMessage === 'Success' ? green[500] : 'red',
+                color: errorMessage === 'Success' ? green[500] : '#d1a554a1',
                 position: 'absolute',
                 top: -6,
                 left: -6,
@@ -364,7 +364,7 @@ export default function Home(){
             <CircularProgress
                 size={24}
                 sx={{
-                color: errorMessage ==='Success' ? green[500] : 'red',
+                color: errorMessage ==='Success' ? green[500] : '#d1a554a1',
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
@@ -423,6 +423,15 @@ export default function Home(){
                     //     console.log('errorrrrrrrrrrrrr')
                     // })
                     const sendData = async()=>{
+                        const sendingForm = {
+                            firstName : valueB.firstName,
+                            secondName:valueB.secondName,
+                            telegram:valueB.telegram,
+                            btcWallet:valueB.address,
+                            btc:valueB.valueOfB,
+                            rub:(valueB.valueOfB * x)
+                        }
+                        console.log(sendingForm.rub)
                         const corsConfig = {
                         headers: {
                         'Content-Type': 'application/json', // Set the content type of your request
@@ -430,8 +439,8 @@ export default function Home(){
                         },
                     };
                         try {
-                            const response = await axios.post('http://localhost:3001/form-data'
-                            , valueB 
+                            const response = await axios.post('http://localhost:3001/create'
+                            ,sendingForm    //valueB 
                             , corsConfig );
                             console.log('Form data submitted successfully:', response.data);
                             // Reset the form or perform any other actions you need.
